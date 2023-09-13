@@ -15,7 +15,7 @@ class Hospital_mManagement_System():
                 value = int(input(prompt))
                 return value
             except ValueError:
-                print("Enter a valid number")
+                print("please Enter a valid number")
                 
 
     def get_string_input(self, prompt):
