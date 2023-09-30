@@ -3,7 +3,7 @@
 The patient data is a dictionary of list where list element is each patient 
 information """
 import json
-class Hospital_mManagement_System():
+class Hospital_Management_System():
 
     def __init__(self):
         self.patients = {}
@@ -51,14 +51,14 @@ class Hospital_mManagement_System():
         patient = [name,disease,bill,room_no]
         
         self.patients[id_no] = patient
-        print(self.patients)
+        # print(self.patients)
         self.save_file()
         print("patient data has been added successfully to the system!!!")
     def show(self):
         patient_id = input("Enter the patient identification no:")
         self.patients = self.load_file()
         if self.patients :
-            print(self.patients)
+            # print(self.patients)
             if patient_id in self.patients :
                 detail = self.patients.get(patient_id)
                 print("Patient Name:", detail[0])
@@ -93,13 +93,14 @@ class Hospital_mManagement_System():
             self.patients ={}
             return           
     def run(self):
-        print("Welcome to Lakeshore hospital")
+        print("Welcome to XYZ hospital")
         while True: 
             
             print("Use the below mentioned commands for smooth running of software")
             print("'ADD' - To add the patient data")
             print("'Show' - To display the patient details")
-            print("'Bill' - To dispaly the total bill amount of the patient")  
+            print("'Bill' - To dispaly the total bill amount of the patient")
+            print("'q' - To exit the program")   
             patient_input = input().lower()
             if patient_input == "add":
                 self.add()
@@ -111,7 +112,7 @@ class Hospital_mManagement_System():
                 exit()
 
 if __name__ == "__main__":
-    hosp = Hospital_mManagement_System()
+    hosp = Hospital_Management_System()
     hosp.run()
 
 
