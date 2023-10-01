@@ -32,7 +32,29 @@ This project serves as an example of basic data management and file I/O operatio
      ```bash
      python hosp.py
      ```
+### Running in a Virtual Environment
 
+You can run this project within a virtual environment to manage its dependencies and isolate it from your system's global Python environment. Here are the steps to set up and run the project in a virtual environment:
+
+1. Create a virtual environment (replace `venv` with your preferred environment name):
+
+   ```bash
+   python -m venv venv
+   ```
+
+2. Activate the virtual environment:
+
+   - On Windows:
+
+    ``` bash
+     venv\Scripts\activate
+     ```
+
+   - On macOS and Linux:
+
+     ```bash
+     source venv/bin/activate
+     ```
 ## Usage
 
 1. Launch the application by running `hosp.exe` (for Windows users) or `hosp.py` (for all users).
